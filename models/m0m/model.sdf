@@ -2,6 +2,11 @@
 <!-- Based on a M0M test run -->
 <sdf version="1.9">
 	<world name="M0M_problem_0">
+		<include>
+			<uri>panda/robots/panda_arm_hand.urdf</uri>
+			<name>panda</name>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
 		<model name="floor#1_1">
 			<link name="table_top">
 				<pose>0.0 0.0 0 0 0 0</pose>
