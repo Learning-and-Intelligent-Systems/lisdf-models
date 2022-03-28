@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<!-- Based on a M0M test run -->
+<sdf version="1.9">
+	<world name="M0M_problem_0">
+		<include>
+			<uri>panda/robots/panda_arm_hand.urdf</uri>
+			<name>panda</name>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+		<model name="floor#1_1">
+			<link name="table_top">
+				<pose>0.0 0.0 0 0 0 0</pose>
+				<collision name="table_top_collision">
+					<geometry>
+						<box>
+							<size>3 3 0.001</size>
+						</box>
+					</geometry>
+				</collision>
+				<visual name="floor_visual">
+					<geometry>
+						<box>
+							<size>3 3 0.001</size>
+						</box>
+					</geometry>
+					<material>
+						<ambient>0.4 0.4 0.4 1</ambient>
+						<diffuse>0.4 0.4 0.4 1</diffuse>
+						<specular>0.4 0.4 0.4 1</specular>
+						<emissive>0.4 0.4 0.4 1</emissive>
+					</material>
+				</visual>
+			</link>
+		</model>
+		<model name="pillar#3_1">
+			<static>true</static>
+			<pose>0.5 0.250000000298023224 -0.02 0 0 0</pose>
+			<link name="pillar#3">
+				<collision name="pillar#3_collision">
+					<geometry>
+						<box>
+							<size>0.3 0.3 0.001</size>
+						</box>
+					</geometry>
+				</collision>
+				<visual name="pillar#3_visual">
+					<geometry>
+						<box>
+							<size>0.3 0.3 0.001</size>
+						</box>
+					</geometry>
+					<material>
+						<ambient>1.0 0.1 0.1 1</ambient>
+						<diffuse>1.0 0.1 0.1 1</diffuse>
+						<specular>1.0 0.1 0.1 1</specular>
+						<emissive>1.0 0.1 0.1 1</emissive>
+					</material>
+				</visual>
+
+			</link>
+		</model>
+		
+		<model name="potted_meat_can#13_1">
+			<static>false</static>
+			<pose>0.5 -0.5 0.03 0 0 0</pose>
+			<link name="potted_meat_can">
+				<collision name="potted_meat_can_collision">
+					<geometry>
+						<mesh>
+							<uri>../ycb/101_potted_meat_can/textured.obj</uri>
+							<scale>1.0 1.0 1.0</scale>
+						</mesh>
+					</geometry>
+				</collision>
+				<visual name="potted_meat_can_visual">
+					<geometry>
+						<mesh>
+							<uri>../ycb/101_potted_meat_can/textured.obj</uri>
+							<scale>1.0 1.0 1.0</scale>
+						</mesh>
+					</geometry>
+					<material>
+						<ambient>1 1 1 1</ambient>
+						<diffuse>1 1 1 1</diffuse>
+						<specular>1 1 1 1</specular>
+						<emissive>1 1 1 1</emissive>
+					</material>
+				</visual>
+			</link>
+		</model>
+	</world>
+</sdf>
