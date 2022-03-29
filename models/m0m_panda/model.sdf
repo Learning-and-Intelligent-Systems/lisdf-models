@@ -67,7 +67,7 @@
 				<collision name="potted_meat_can_collision">
 					<geometry>
 						<mesh>
-							<uri>../ycb/101_potted_meat_can/textured.obj</uri>
+							<uri>../ycb/010_potted_meat_can/textured.obj</uri>
 							<scale>1.0 1.0 1.0</scale>
 						</mesh>
 					</geometry>
@@ -75,7 +75,7 @@
 				<visual name="potted_meat_can_visual">
 					<geometry>
 						<mesh>
-							<uri>../ycb/101_potted_meat_can/textured.obj</uri>
+							<uri>../ycb/010_potted_meat_can/textured.obj</uri>
 							<scale>1.0 1.0 1.0</scale>
 						</mesh>
 					</geometry>
