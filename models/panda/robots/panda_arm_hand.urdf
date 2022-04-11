@@ -246,7 +246,7 @@
   </joint>
 
   <joint name="camera_frame_joint" type="fixed">
-    <origin rpy="0 0 -1.5708" xyz="0.030768772587180138, 0.0, 0.05"/>
+    <origin rpy="0 0 -1.5708" xyz="0.030768772587180138 0.0 0.05"/>
     <parent link="panda_hand"/>
     <child link="camera_frame"/>
     <axis xyz="0 0 0"/>

@@ -1,13 +1,23 @@
 <?xml version="1.0" ?>
 <!-- Based on a M0M test run -->
-<sdf version="1.9">
-	<world name="M0M_problem_0">
-		<include>
-			<uri>panda/robots/panda_arm_hand.urdf</uri>
-			<name>panda</name>
+<sdf version="1.7">
+    <world name="M0M_problem_0">
+        <include>
+                        <uri>panda/robots/panda_spheres.urdf</uri>
+                        <name>panda</name>>
+                        <!--<uri>pr2_drake/urdf/pr2_simplified.urdf</uri>
+                        <name>pr2</name>-->
 			<pose>0 0 0 0 0 0</pose>
-		</include>
-		<model name="floor#1_1">
+        </include>
+        <model name="floor#1_1">
+                        <inertial>
+                            <mass>10.0</mass>
+                            <inertia>
+                                <ixx>1.0</ixx><ixy>0.0</ixy><ixz>0.0</ixz>
+                                <iyy>1.0</iyy><iyz>0.0</iyz><izz>1.0</izz>
+                            </inertia>
+                        </inertial>
+			<static>true</static>
 			<link name="table_top">
 				<pose>0.0 0.0 0 0 0 0</pose>
 				<collision name="table_top_collision">
@@ -34,7 +44,7 @@
 		</model>
 		<model name="pillar#3_1">
 			<static>true</static>
-			<pose>0.5 0.250000000298023224 -0.02 0 0 0</pose>
+			<pose>0.5 0.0 0.01 0 0 0</pose>
 			<link name="pillar#3">
 				<collision name="pillar#3_collision">
 					<geometry>
@@ -60,22 +70,30 @@
 			</link>
 		</model>
 		
-		<model name="potted_meat_can#13_1">
+                <model name="potted_meat_can#13_1">
+                        <inertial>
+                            <mass>1.0</mass>
+                            <inertia>
+                                <ixx>1.0</ixx><ixy>0.0</ixy><ixz>0.0</ixz>
+                                <iyy>1.0</iyy><iyz>0.0</iyz><izz>1.0</izz>
+                            </inertia>
+                        </inertial>
 			<static>false</static>
 			<pose>0.5 -0.5 0.03 0 0 0</pose>
 			<link name="potted_meat_can">
 				<collision name="potted_meat_can_collision">
 					<geometry>
-						<mesh>
-							<uri>../ycb/101_potted_meat_can/textured.obj</uri>
+                                            <!--<mesh>
+							<uri>../ycb/010_potted_meat_can/textured.obj</uri>
 							<scale>1.0 1.0 1.0</scale>
-						</mesh>
+                                            </mesh>-->
+                                            <box> <size> 0.01 0.01 0.01 </size></box>
 					</geometry>
 				</collision>
 				<visual name="potted_meat_can_visual">
 					<geometry>
 						<mesh>
-							<uri>../ycb/101_potted_meat_can/textured.obj</uri>
+							<uri>../ycb/010_potted_meat_can/textured.obj</uri>
 							<scale>1.0 1.0 1.0</scale>
 						</mesh>
 					</geometry>
