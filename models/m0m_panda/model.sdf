@@ -3,7 +3,7 @@
 <sdf version="1.7">
     <world name="M0M_problem_0">
         <include>
-                        <uri>panda/robots/panda_spheres.urdf</uri>
+                        <uri>panda/robots/panda_drake.urdf</uri>
                         <name>panda</name>>
                         <!--<uri>pr2_drake/urdf/pr2_simplified.urdf</uri>
                         <name>pr2</name>-->
@@ -87,7 +87,7 @@
 							<uri>../ycb/010_potted_meat_can/textured.obj</uri>
 							<scale>1.0 1.0 1.0</scale>
                                             </mesh>-->
-                                            <box> <size> 0.01 0.01 0.01 </size></box>
+                                            <box> <size> 0.08 0.04 0.08 </size></box>
 					</geometry>
 				</collision>
 				<visual name="potted_meat_can_visual">
