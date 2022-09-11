@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 .DS_Store
 models/.DS_Store
+
+# JetBrains IDEA IDEs
+.idea/
