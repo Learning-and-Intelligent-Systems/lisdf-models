@@ -1678,7 +1678,9 @@
       <geometry>
         <!-- TODO(caelan): remove the prosilica -->
         <mesh filename="meshes/sensors/kinect_prosilica_v0/115x100_swept_back--coarse.STL" scale="0.001 0.001 0.001"/>
-        <!--mesh filename="meshes/sensors/kinect_prosilica_v0/68-04546_Kinect_Sensor--coarse.STL" scale="0.001 0.001 0.001"/-->
+        <!-- Note in the line below 1682, the double dash betwen Kinect_Sensor and coarse.STL was replaced by a single dash '-'
+         as double dashes within a XML string are invalid -->
+        <!--mesh filename="meshes/sensors/kinect_prosilica_v0/68-04546_Kinect_Sensor-coarse.STL" scale="0.001 0.001 0.001"/-->
       </geometry>
       <material name="gray">
         <color rgba="0.5 0.5 0.5 1"/>
